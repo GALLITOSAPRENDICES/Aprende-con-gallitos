@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="./../../../assets/images/icon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Sumas</title>
+    <link rel="stylesheet" href="./../../../css/game.css">
+</head>
+<body>
+    <div class="main-container">
+        
+        <h2 id="question">¿Cuánto es 5 + 1?</h2>
+
+        <div id="feedback-image" class="feedback-image"></div>
+
+        <div class="menu-options">
+            <button class="option">7</button>
+            <button class="option">12</button>
+            <button class="option">6</button>
+        </div>
+    </div>
+
+    <!-- Botón de Regresar -->
+    <button class="back-button" onclick="goBack()">Regresar</button>
+    
+    <!-- Script JavaScript para el botón de regresar -->
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+
+    <script src="./../../../js/games/common.js"></script>
+    <script src="./../../../js/games/primero/suma.js"></script>
+</body>
+</html>

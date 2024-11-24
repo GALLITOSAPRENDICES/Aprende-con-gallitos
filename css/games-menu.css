@@ -1,0 +1,41 @@
+@import url(./globals.css);
+
+.btn-grade {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Coloca la imagen arriba y el texto abajo */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--dark-blue);
+    height: 350px;
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s, background-color 0.3s;
+    max-width: 25%;
+    padding: 10px;
+}
+
+.btn-image {
+    width: auto; /* Ajusta el tamaño de la imagen según lo necesites */
+    height: 220px;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    border-radius: 20px;
+}
+
+.btn-text {
+    font-size: 2.2rem; /* Tamaño del texto */
+}
+
+.btn-grade:hover {
+    transform: scale(.9);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-grade:active {
+    color: white;
+    background-color: var(--bright-red);
+    transform: scale(1);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="./../../assets/images/icon.png" type="image/png">
+    <link rel="stylesheet" href="./../../css/games-menu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Primero</title>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <h1 class="text-margin">Selecciona un juego</h1>
+
+        <div class="container-center">
+
+            <div class="menu-options">
+                <!-- Botón para el juego de Sumas -->
+                <a class="btn-grade" href="./../games/primero/suma.html">
+                    <img src="./../../assets/wallpapers/suma.png" alt="Sumas" class="btn-image">
+                    <span class="btn-text">Sumas</span>
+                </a>
+                
+                <!-- Botón para el juego de Restas -->
+                <a class="btn-grade" href="./../games/primero/resta.html">
+                    <img src="./../../assets/wallpapers/resta.png" alt="Restas" class="btn-image">
+                    <span class="btn-text">Restas</span>
+                </a>
+
+                <!-- Botón para el juego de ¿Qué animal es? -->
+                <a class="btn-grade" href="./../games/primero/animal.html">
+                    <img src="./../../assets/wallpapers/que_animal_es.png" alt="¿Qué animal es?" class="btn-image">
+                    <span class="btn-text">¿Qué animal es?</span>
+                </a>
+
+            </div>         
+        
+        </div>
+
+    </div>
+
+    <!-- Botón de Regresar -->
+    <button class="back-button" onclick="goBack()">Regresar</button>
+    
+    <!-- Script JavaScript para el botón de regresar -->
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>

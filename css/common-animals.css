@@ -1,0 +1,43 @@
+@import url(./globals.css);
+
+/* Imagen de feedback (correcto/incorrecto) */
+.feedback-image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin-top: -200px;
+    margin-bottom: 100px;
+}
+
+/* Imagen del animal */
+.animal-image-container {
+    margin-bottom: 50px;
+}
+.animal-image {
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Opciones de respuesta */
+.options {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.option {
+    background-color: var(--bright-yellow); 
+    color: white;
+    font-size: 3rem;
+    height: 150px;
+    width: 25%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: var(--pink);
+}

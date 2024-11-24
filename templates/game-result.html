@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="./../../assets/images/icon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="./../css/game-result.css">
+</head>
+<body>
+    <div class="container-result">
+
+        <h2 class="result-title">¡Juego terminado!</h2>
+
+        <!-- Icono de la página -->
+        <img src="./../assets/images/icon-border.png" alt="Aprendiendo con Gallitos" class="game-icon">
+
+        <!-- Mensaje de resultados -->
+        
+        <p id="score" class="score-text"></p>
+        <p id="message" class="message-text"></p>
+
+        <!-- Botón de continuar -->
+        <button onclick="continueGame()" class="continue-button">Continuar</button>
+    </div>
+
+    <script>
+        // Obtiene el puntaje de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = parseInt(urlParams.get('score'));
+
+        // Muestra el puntaje en la página de resultados
+        document.getElementById('score').innerText = `Aciertos: ${score} de 5`;
+
+        // Muestra un mensaje diferente según el número de aciertos
+        const messageElement = document.getElementById('message');
+        if (score === 5) {
+            messageElement.innerText = "¡Excelente!";
+        } else if (score >= 3) {
+            messageElement.innerText = "¡Muy bien! Puedes mejorar.";
+        } else {
+            messageElement.innerText = "¡Sigue practicando!";
+        }
+
+        // Función para redireccionar al menú de juegos
+        function continueGame() {
+            window.location.href = "./menus/main-menu.html"; // Cambia la ruta a la página deseada
+        }
+    </script>
+</body>
+</html>

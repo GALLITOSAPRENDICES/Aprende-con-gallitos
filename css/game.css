@@ -1,0 +1,32 @@
+@import url(./globals.css);
+
+/* Imagen de feedback */
+.feedback-image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+/* Opciones de respuesta */
+.options {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.option {
+    background-color: var(--bright-yellow); 
+    color: white;
+    font-size: 6rem;
+    height: 250px;
+    width: 25%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: var(--pink);
+}

@@ -1,0 +1,59 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.feedback-image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin: 20px auto;
+}
+
+.animal-image-container {
+    margin: 20px 0;
+}
+
+.animal-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sentence {
+    font-size: 1.8rem;
+    margin: 20px;
+}
+
+/* Opciones de respuesta */
+.answer-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.option {
+    background-color: #ffc107;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #ff9800;
+}

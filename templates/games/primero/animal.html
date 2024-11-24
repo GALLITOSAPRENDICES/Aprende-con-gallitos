@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="./../../../assets/images/icon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego ¿Qué animal es?</title>
+    <link rel="stylesheet" href="./../../../css/common-animals.css">
+</head>
+<body>
+    <div class="main-container">
+
+        <!-- Contenedor de la pregunta -->
+        <h2 id="question">¿Qué animal es?</h2>
+
+        <!-- Contenedor de la imagen del animal -->
+        <div class="animal-image-container">
+            <img id="animal-image" src="" alt="Animal" class="animal-image">
+        </div>
+
+        <!-- Imagen de feedback (correcto/incorrecto) -->
+        <div id="feedback-image" class="feedback-image"></div>
+
+        <!-- Opciones de respuesta -->
+        <div class="menu-options">
+            <button class="option" onclick="selectAnswer(0)">Opción 1</button>
+            <button class="option" onclick="selectAnswer(1)">Opción 2</button>
+            <button class="option" onclick="selectAnswer(2)">Opción 3</button>
+        </div>
+    </div>
+
+
+    <!-- Botón de Regresar -->
+    <button class="back-button" onclick="goBack()">Regresar</button>
+    
+    <!-- Script JavaScript para el botón de regresar -->
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+
+    <!-- Archivos JavaScript -->
+    <script src="./../../../js/games/common-animals.js"></script> <!-- Lógica común -->
+    <script src="./../../../js/games/primero/animal.js"></script> <!-- Lógica específica del juego -->
+</body>
+</html>

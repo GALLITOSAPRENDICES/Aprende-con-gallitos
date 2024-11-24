@@ -1,0 +1,73 @@
+@import url(./globals.css);
+
+/* Estilos del fondo y contenedor principal */
+body {
+    background-color: #2f4c81; /* Fondo azul */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container-result {
+    background-color: var(--green); /* Fondo verde del contenedor */
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+/* Estilo del icono */
+.game-icon {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilo del título */
+.result-title {
+    font-size: 2rem;
+    color: white;
+    margin: 10px 0;
+}
+
+/* Estilo del texto de puntaje */
+.score-text {
+    font-size: 1.7rem;
+    color: var(--dark-blue);
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Estilo del mensaje */
+.message-text {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Estilo del botón de continuar */
+.continue-button {
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.continue-button:hover {
+    background-color: var(--vibrant-blue);
+}
+
+.continue-button:active {
+    background-color: var(--vibrant-blue);
+}

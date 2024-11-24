@@ -1,0 +1,44 @@
+@import url(./globals.css);
+
+.image-container {
+    height: 400px; /* Ajustado al 40% de la altura disponible */
+    margin: 0 auto; /* Centra el contenedor en el eje horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.image-container img {
+    max-width: 100%; /* Ajusta la imagen al ancho disponible */
+    max-height: 100%; /* Ajusta la imagen a la altura disponible */
+}
+
+.button-container {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_start {
+    display: inline-block;
+    font-size: 4rem;
+    color: white;
+    background-color: var(--bright-red);
+    padding: 2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s, background-color 0.3s;
+}
+
+.button_start:hover {
+    transform: scale(1.3); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de elevación */
+}
+
+.button_start:active {
+    color: white;
+    background-color: var(--yellow);
+    transform: scale(.95); /* Reduce el tamaño un poco cuando se presiona */
+}

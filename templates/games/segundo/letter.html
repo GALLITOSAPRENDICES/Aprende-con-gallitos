@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="./../../../assets/images/icon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego ¿Con qué letra empieza?</title>
+    <link rel="stylesheet" href="./../../../css/common-animals.css">
+</head>
+<body>
+    <div class="main-container">
+
+        <!-- Contenedor de la pregunta -->
+        <h2 id="question">¿Con qué letra empieza?</h2>
+
+        <!-- Contenedor de la imagen del animal -->
+        <div class="animal-image-container">
+            <img id="animal-image" src="" alt="Animal" class="animal-image">
+        </div>
+
+        <!-- Imagen de feedback (correcto/incorrecto) -->
+        <div id="feedback-image" class="feedback-image"></div>
+
+        <!-- Opciones de respuesta -->
+        <div class="menu-options">
+            <button class="option">A</button>
+            <button class="option">B</button>
+            <button class="option">C</button>
+        </div>
+    </div>
+
+
+     <!-- Botón de Regresar -->
+     <button class="back-button" onclick="goBack()">Regresar</button>
+    
+     <!-- Script JavaScript para el botón de regresar -->
+     <script>
+         function goBack() {
+             window.history.back();
+         }
+     </script>
+
+
+
+
+    <!-- Archivos JavaScript -->
+    <script src="./../../../js/games/common-animals.js"></script> <!-- Lógica común -->
+    <script src="./../../../js/games/segundo/letter.js"></script> <!-- Lógica específica del juego -->
+</body>
+</html>
